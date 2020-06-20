@@ -2,4 +2,4 @@
 slug: first-post
 title: First Post
 ---
-We here!
+Fist post by me, from local
