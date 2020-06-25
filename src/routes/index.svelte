@@ -1,46 +1,46 @@
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
+<script>
+  const techList = [
+    "React",
+    "Wordpress",
+    "Gatsby",
+    "Vue",
+    "jQuery",
+    "Node, Express",
+    "Sass"
+  ];
 
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
+  const skills = [
+    "Diploma in Web & UX Design",
+    "UX and Design for web apps and sites"
+  ];
 
-	figure {
-		margin: 0 0 1em 0;
-	}
+  const aboutBlurb = `
+	Hi I'm Joel, I dev and this is something short about me
+`;
+</script>
 
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
+<style lang="sass">
 
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
 </style>
 
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>Sapper project template</title>
 </svelte:head>
+<div class="top">
+  <h1>Home</h1>
+  <div class="top">
+    <div class="left">
+      <h2>About Me</h2>
+      <p>{aboutBlurb}</p>
+    </div>
 
-<h1>Great success!</h1>
-
-<figure>
-	<img alt='Success Kid' src='successkid.jpg'>
-	<figcaption>Have fun with Sapper!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+    <div class="right">
+      <ul class="tags">
+        <h2>My Skills</h2>
+        {#each techList as tech}
+          <li>{tech}</li>
+        {/each}
+      </ul>
+    </div>
+  </div>
+</div>
