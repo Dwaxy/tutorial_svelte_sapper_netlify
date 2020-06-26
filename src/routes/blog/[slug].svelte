@@ -20,7 +20,7 @@
   let img = post.image
 </script>
 
-<style>
+<style lang="scss">
   /*
 		By default, CSS is locally scoped to the component,
 		and any unused styles are dead-code-eliminated.
@@ -29,6 +29,17 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
+
+  // .content :global(p) {
+    
+  // }
+
+  .content :global(p > img) {
+    padding: 30px;
+    max-width: 90%;
+    display: flex;
+    margin: 0 auto;
+  }
   .content :global(h2) {
     font-size: 1.4em;
     font-weight: 500;
@@ -54,14 +65,35 @@
   .content :global(li) {
     margin: 0 0 0.5em 0;
   }
+  .bottom {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+  }
 
   .top {
-	  display: flex;
+    display: flex;
+    margin-bottom: -150px;
+    .left, .right {
+      width: 50%
+    }
+
+    .right-content {
+      padding-left: 30px;
+      h1 {
+        margin-top: 0px;
+        line-height: 0.7;
+      }
+      .tags {
+        list-style-type: none;
+        padding: 0px;
+        li {
+          padding-bottom: 5px;
+        }
+      }
+    }
   }
 
-  .top > .left, .right {
-	  width: 50%
-  }
 </style>
 
 <svelte:head>
@@ -73,6 +105,8 @@
     <Image src={img} />
   </div>
   <div class="right">
+
+  <div class="right-content">
     <h1>{post.title}</h1>
 
     <ul class="tags">
@@ -81,8 +115,9 @@
       {/each}
     </ul>
   </div>
+  </div>
 </div>
 
-<div class="content">
+<div class="bottom content">
   {@html post.html}
 </div>

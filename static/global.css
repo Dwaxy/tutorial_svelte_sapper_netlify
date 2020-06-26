@@ -1,0 +1,26 @@
+html, body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,25,73,1) 37%);
+    margin: 0;
+    padding: 0;
+}
+
+*:before, *:after, * {
+    box-sizing: border-box;
+}
+
+#app-holder {
+    padding: 40px;
+}
+
+h1, h2, h3, h4, span, p, a, li, .title, .content {
+    color: #F6F5F6;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, .title {
+    font-weight: 500;
+    letter-spacing: 2px;
+}
