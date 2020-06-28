@@ -3,14 +3,22 @@ html, body, #sapper, #app-holder {
     background: linear-gradient(90deg, rgba(39,25,73,1) 24%, rgba(2,0,36,0.9248074229691877) 94%) fixed;
     margin: 0;
     padding: 0;
-    min-height: 100%;
-    height: 100%;
+    /* min-height: 100%;
+    height: 100%; */
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 *:before, *:after, * {
     box-sizing: border-box;
+}
+
+* {
+    transition: all ease-in-out;
+}
+
+svg, svg > * {
+    fill: #F6F5F6;
 }
 
 #app-holder {

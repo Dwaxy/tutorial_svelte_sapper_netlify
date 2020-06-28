@@ -6,6 +6,7 @@
     "Vue",
     "jQuery",
     "Node, Express",
+    "Graphql",
     "Sapper",
     "Sass"
   ];
@@ -26,6 +27,9 @@ export let segment;
 .top {
   display: flex;
   justify-content: space-around;
+  height: calc(100vh - 150px);
+  max-width: 1000px;
+  margin: 0 auto;
   .right, .left {
     width: 300px;
   }

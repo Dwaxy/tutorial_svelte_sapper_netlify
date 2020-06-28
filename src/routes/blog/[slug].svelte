@@ -2,22 +2,22 @@
   export async function preload({ params, query }) {
     // the `slug` parameter is available because
     // this file is called [slug].svelte
-    const res = await this.fetch(`blog/${params.slug}.json`)
-    const data = await res.json()
+    const res = await this.fetch(`blog/${params.slug}.json`);
+    const data = await res.json();
 
     if (res.status === 200) {
-      return { post: data }
+      return { post: data };
     } else {
-      this.error(res.status, data.message)
+      this.error(res.status, data.message);
     }
   }
 </script>
 
 <script>
-  export let post
-  let tags = post.tags
-  import Image from "svelte-image"
-  let img = post.image
+  export let post;
+  let tags = post.tags;
+  import Image from "svelte-image";
+  let img = post.image;
 </script>
 
 <style lang="scss">
@@ -31,8 +31,17 @@
 	*/
 
   // .content :global(p) {
-    
+
   // }
+
+  body {
+    height: auto;
+  }
+
+  .content :global(a) {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
 
   .content :global(p > img) {
     padding: 30px;
@@ -65,24 +74,34 @@
   .content :global(li) {
     margin: 0 0 0.5em 0;
   }
+
+  .content {
+    max-width: 700px;
+  }
   .bottom {
     width: 1000px;
     margin: 0 auto;
     padding: 40px;
+    position: relative;
   }
 
   .top {
     display: flex;
-    margin-bottom: -150px;
-    .left, .right {
-      width: 50%
+    .left {
+      width: 70%;
+      height: 70vh;
+      min-width: 400px;
+      max-width: 900px;
     }
 
     .right-content {
       padding-left: 30px;
+      a {
+        display: block;
+      }
       h1 {
         margin-top: 0px;
-        line-height: 0.7;
+        line-height: 1.4;
       }
       .tags {
         list-style-type: none;
@@ -92,8 +111,13 @@
         }
       }
     }
+    @media screen and (max-width: 1000px) {
+      display: block;
+      .left, .right {
+        width: 100%;
+      }
+    }
   }
-
 </style>
 
 <svelte:head>
@@ -106,15 +130,30 @@
   </div>
   <div class="right">
 
-  <div class="right-content">
-    <h1>{post.title}</h1>
+    <div class="right-content">
+      <h1>{post.title}</h1>
 
-    <ul class="tags">
-      {#each tags as tag}
-        <li>{tag}</li>
-      {/each}
-    </ul>
-  </div>
+      <ul class="tags">
+        {#each tags as tag}
+          <li>{tag}</li>
+        {/each}
+      </ul>
+
+      {#if post.link}
+        <!-- content here -->
+        <a target="_blank" href={post.link}>
+          <button class="btn">View Project</button>
+        </a>
+      {/if}
+
+      {#if post.gitLink}
+        <!-- content here -->
+        <a target="_blank" href={post.gitLink}>
+          <button class="btn">View Git Repo</button>
+        </a>
+      {/if}
+
+    </div>
   </div>
 </div>
 

@@ -14,13 +14,13 @@
 </script>
 
 <style lang="scss">
-  $itemWidth: 300px;
+  $itemWidth: 350px;
   .items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($itemWidth, 1fr));
-    grid-template-rows: repeat(6, $itemWidth);
     grid-gap: 1rem;
     grid-auto-flow: dense;
+    min-height: calc(100vh - 150px);
     .item {
       width: $itemWidth;
       padding: 15px;
@@ -45,6 +45,10 @@
         span {
           margin: 5px;
         }
+      }
+
+      .btn {
+        width: 100%;
       }
     }
   }
@@ -73,6 +77,8 @@
             {/each}
           </div>
         </div>
+
+        <button class="btn">View Project</button>
     
       </a>
   {/each}
