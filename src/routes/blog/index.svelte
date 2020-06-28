@@ -14,50 +14,45 @@
 </script>
 
 <style lang="scss">
-
-$itemWidth: 300px;
-.items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax($itemWidth, 1fr));
-  grid-template-rows: repeat(6, $itemWidth);
-  grid-gap: 1rem;
-  grid-auto-flow: dense;
-  .item {
-    width: $itemWidth;
-    padding: 15px;
-    padding-bottom: 40px;
-
-    .content-holder {
-      margin-top: -80px;
-    }
-    img {
+  $itemWidth: 300px;
+  .items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($itemWidth, 1fr));
+    grid-template-rows: repeat(6, $itemWidth);
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+    .item {
       width: $itemWidth;
-    }
+      padding: 15px;
+      padding-bottom: 40px;
 
-    .title {
-      text-align: center;
-      margin: 0;
-    }
+      .content-holder {
+        margin-top: -80px;
+      }
+      img {
+        width: $itemWidth;
+      }
 
-    .tags {
-      display: flex;
-      width: max-content;
-      margin: 0 auto;
-      span {
-        margin: 5px;
+      .title {
+        text-align: center;
+        margin: 0;
+      }
+
+      .tags {
+        display: flex;
+        width: max-content;
+        margin: 0 auto;
+        span {
+          margin: 5px;
+        }
       }
     }
   }
-}
-
-
 </style>
 
 <svelte:head>
   <title>Portfolio Items</title>
 </svelte:head>
-
-<h1>Recent posts</h1>
 
 <div class="items">
   {#each posts as post}

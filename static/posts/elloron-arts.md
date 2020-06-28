@@ -1,11 +1,12 @@
 ---
-slug: first-post
-title: First Post
+slug: elloron-arts
+title: Elloron Arts
 tags:
     - react
     - gatsby
+    - sass
 
-image: "images/successkid.jpg"
+image: ""
 ---
 Fist post by me, from local
 

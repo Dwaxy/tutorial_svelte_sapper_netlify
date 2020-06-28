@@ -6,6 +6,7 @@
     "Vue",
     "jQuery",
     "Node, Express",
+    "Sapper",
     "Sass"
   ];
 
@@ -17,6 +18,8 @@
   const aboutBlurb = `
 	  Hi I'm Joel, I dev and this is something short about me
 `;
+
+export let segment;
 </script>
 
 <style lang="scss">
@@ -45,6 +48,11 @@
   <div class="left">
     <h2>About Me</h2>
     <p>{aboutBlurb}</p>
+    <div class="button-holder">
+        <a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>
+          <button class="btn">My Works</button>
+        </a>
+    </div>
   </div>
 
   <div class="right">

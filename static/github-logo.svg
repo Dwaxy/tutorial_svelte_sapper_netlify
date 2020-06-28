@@ -1,45 +1,8 @@
-<script>
-	export let segment;
-</script>
-
-<style lang="scss">
-nav {
-	padding-bottom: 40px;
-	.nav-holder {
-		display: fex;
-		span {
-			margin-right: 10px;
-			font-size: 20px;
-		}
-	}
-
-	.links-holder {
-		float: right;
-		.git, svg {
-			width: 30px;
-			height: 30px;
-			position: relative;
-			top: 0;
-		}
-	}
-}
-</style>
-
-<nav>
-	<div class="nav-holder">
-		<span><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>Home </a></span>
-
-		<span>/</span>
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<span><a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>Portfolio Items</a></span>
-
-
-		<div class="links-holder">
-		<div class="git">
-
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="438.549px" height="438.549px" viewBox="0 0 438.549 438.549" fill="#F6F5F6;" style="enable-background:new 0 0 438.549 438.549;"
+	 width="438.549px" height="438.549px" viewBox="0 0 438.549 438.549" style="enable-background:new 0 0 438.549 438.549;"
 	 xml:space="preserve">
 <g>
 	<path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365
@@ -94,9 +57,3 @@ nav {
 <g>
 </g>
 </svg>
-
-		</div>
-	</div>
-
-
-</nav>

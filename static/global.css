@@ -1,8 +1,12 @@
-html, body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,25,73,1) 37%);
+html, body, #sapper, #app-holder {
+    background: rgb(39,25,73);
+    background: linear-gradient(90deg, rgba(39,25,73,1) 24%, rgba(2,0,36,0.9248074229691877) 94%) fixed;
     margin: 0;
     padding: 0;
+    min-height: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 *:before, *:after, * {
@@ -23,4 +27,46 @@ h1, h2, h3, h4, span, p, a, li, .title, .content {
 h1, h2, h3, h4, .title {
     font-weight: 500;
     letter-spacing: 2px;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.btn {
+    padding: 15px;
+    background-color: #F6F5F6;
+    color: rgba(2,0,36,1);
+    margin-top: 30px;
+    color: rgba(2,0,36,1);
+    font-weight: bold;
+}
+
+.btn:hover{
+    cursor: pointer;
 }
