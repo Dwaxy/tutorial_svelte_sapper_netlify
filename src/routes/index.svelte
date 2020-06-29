@@ -7,7 +7,6 @@
     "jQuery",
     "Node, Express",
     "Graphql",
-    "Sapper",
     "Sass"
   ];
 

@@ -15,8 +15,8 @@
 
 <script>
   export let post;
-  let tags = post.tags;
   import Image from "svelte-image";
+  let tags = post.tags;
   let img = post.image;
 </script>
 
