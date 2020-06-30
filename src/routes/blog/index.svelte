@@ -25,7 +25,7 @@
       width: $itemWidth;
       padding: 15px;
       padding-bottom: 40px;
-
+      margin: 0 auto;
       .content-holder {
         margin-top: -80px;
       }

@@ -1,6 +1,6 @@
 ---
 slug: 1-take-control-karate
-title: Take Control Karate Club
+title: Take Control Karate
 tags:
     - Underscore Theme
     - Wordpress
