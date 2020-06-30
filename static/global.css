@@ -1,6 +1,6 @@
 html, body, #sapper, #app-holder {
-    background: rgb(39,25,73);
-    background: linear-gradient(90deg, rgba(39,25,73,1) 24%, rgba(2,0,36,0.9248074229691877) 94%) fixed;
+    background: rgb(20,43,57);
+    background: linear-gradient(90deg, rgba(20,43,57,1) 0%, rgba(13,12,38,1) 100%);
     margin: 0;
     padding: 0;
     /* min-height: 100%;

@@ -53,6 +53,10 @@
   .content :global(h2) {
     font-size: 1.4em;
     font-weight: 500;
+    font-family: 'Heebo', sans-serif;
+  }
+  .content :global(h1) {
+    font-family: 'Heebo', sans-serif;
   }
 
   .content :global(pre) {
@@ -93,6 +97,8 @@
 
   .top {
     display: flex;
+    margin: 0 auto;
+    justify-content: center;
     .left {
       width: 70%;
       height: 70vh;
@@ -114,6 +120,7 @@
         padding: 0px;
         li {
           padding-bottom: 5px;
+          text-transform: capitalize;
         }
       }
     }
@@ -128,7 +135,7 @@
 </style>
 
 <svelte:head>
-  <title>{post.title}</title>
+  <title>Project - {post.title}</title>
 </svelte:head>
 
 <div class="top">

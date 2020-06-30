@@ -60,6 +60,7 @@
 
 
     <div class="links-holder">
+    <a href="https://github.com/Dwaxy" target="_blank">
       <div class="git">
         <svg
           version="1.1"
@@ -114,6 +115,7 @@
           <g />
         </svg>
       </div>
+      </a>
     </div>
   </div>
 </nav>
