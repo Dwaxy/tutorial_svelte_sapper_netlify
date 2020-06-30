@@ -104,10 +104,14 @@
       height: 70vh;
       min-width: 400px;
       max-width: 900px;
+      max-height: 70vw;
     }
 
     .right-content {
       padding-left: 30px;
+      @media screen and (max-width: 1000px) {
+        padding: 0;
+      }
       a {
         display: block;
       }

@@ -25,6 +25,13 @@ svg, svg > * {
     padding: 40px;
 }
 
+@media screen and (max-width: 700px) {
+  #app-holder {
+      padding-top: 30px;
+      padding: 20px;
+  }
+}
+
 h1, h2, h3, h4, span, p, a, li, .title, .content {
     color: #F6F5F6;
     font-family: 'Open Sans', sans-serif;
