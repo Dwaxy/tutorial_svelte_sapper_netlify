@@ -13,7 +13,8 @@
 
   const skills = [
     "Diploma in Web & UX Design",
-    "UX and Design for web apps and sites"
+    "Design And UX",
+    "Full Stack Developer"
   ];
 
   const aboutBlurb = `
