@@ -41,6 +41,7 @@
   .content :global(a) {
     font-weight: bold;
     letter-spacing: 1.5px;
+    text-decoration: underline;
   }
 
   .content :global(p > img) {

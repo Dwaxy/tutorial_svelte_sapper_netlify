@@ -5,7 +5,8 @@
     "Gatsby",
     "Vue",
     "jQuery",
-    "Node, Express",
+    "Node",
+    "Express",
     "Graphql",
     "Sass",
     "Diploma in Web & UX Design",
@@ -45,6 +46,15 @@ export let segment;
     list-style-type: none;
     li {
       padding: 2px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: block;
+    .left, .right {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
     }
   }
 }
