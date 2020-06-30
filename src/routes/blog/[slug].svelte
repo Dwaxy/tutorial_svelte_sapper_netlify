@@ -79,10 +79,15 @@
     max-width: 700px;
   }
   .bottom {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px;
     position: relative;
+  }
+  @media screen and (max-width: 1000px) {
+    .bottom {
+      padding: 0;
+    }
   }
 
   .top {
@@ -115,6 +120,7 @@
       display: block;
       .left, .right {
         width: 100%;
+        min-width: 0;
       }
     }
   }
