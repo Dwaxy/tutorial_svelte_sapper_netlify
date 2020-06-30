@@ -15,8 +15,8 @@
 
 <script>
   export let post;
-  let tags = post.tags;
   import Image from "svelte-image";
+  let tags = post.tags;
   let img = post.image;
 </script>
 
@@ -41,6 +41,7 @@
   .content :global(a) {
     font-weight: bold;
     letter-spacing: 1.5px;
+    text-decoration: underline;
   }
 
   .content :global(p > img) {
@@ -79,10 +80,15 @@
     max-width: 700px;
   }
   .bottom {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px;
     position: relative;
+  }
+  @media screen and (max-width: 1000px) {
+    .bottom {
+      padding: 0;
+    }
   }
 
   .top {
@@ -115,6 +121,7 @@
       display: block;
       .left, .right {
         width: 100%;
+        min-width: 0;
       }
     }
   }

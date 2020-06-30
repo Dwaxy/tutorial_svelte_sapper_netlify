@@ -25,12 +25,12 @@
       width: $itemWidth;
       padding: 15px;
       padding-bottom: 40px;
-
+      margin: 0 auto;
       .content-holder {
         margin-top: -80px;
       }
-      img {
-        width: $itemWidth;
+      * > img {
+        height: $itemWidth;
       }
 
       .title {
@@ -44,6 +44,7 @@
         margin: 0 auto;
         span {
           margin: 5px;
+          text-transform: capitalize;
         }
       }
 

@@ -1,6 +1,6 @@
 ---
 slug: 1-take-control-karate
-title: Take Control Karate Club
+title: Take Control Karate
 tags:
     - Underscore Theme
     - Wordpress
@@ -15,7 +15,7 @@ gitLink: "https://github.com/Dwaxy/Food-Ordring-App"
 
 ## Brief
 
-I decided to remake my karate clubs website for my last assignment, as the original greatly deserved a remake. Understanding an organisation and then accurately portraying it on the web in an attractive way is the ultimate goal for businesses on the web. Therefore this was a unique opportunity for me, as I have an inside perspective of the organisation, and want to give a shot at its accurate portrayal online.
+I decided to remake my karate club's website for my last assignment, as the original greatly deserved a remake. Understanding an organisation and then accurately portraying it on the web in an attractive way is the ultimate goal for businesses on the web. Therefore this was a unique opportunity for me, as I have an inside perspective of the organisation, and want to give a shot at its accurate portrayal online.
 
 ## Target Audience
 
