@@ -24,6 +24,7 @@ export let segment;
   margin: 0 auto;
   .right, .left {
     width: 400px;
+    padding-top: 5vh;
     .title {
       font-family: 'Heebo', sans-serif;
     }
@@ -31,6 +32,18 @@ export let segment;
       letter-spacing: 0.8px;
     }
 
+    .i1 {
+      font-size: 19px;
+    }
+    .i2 {
+      font-size: 18px;
+    }
+    .i3 {
+      font-size: 17px;
+    }
+    .i4 {
+      font-size: 18px;
+    }
   }
 
   .tags {
@@ -49,7 +62,6 @@ export let segment;
     }
   }
 }
-
 </style>
 
 <svelte:head>
@@ -59,13 +71,13 @@ export let segment;
 <div class="top">
   <div class="left">
     <h2 class="title">About Me</h2>
-    <p>I'm Joel, a <b>Full-Stack</b> web developer who has just finished a Diploma in Web UX Design and Production. </p>
+    <p>I'm Joel, a <b class="i1">Full-Stack</b> web developer who has just finished a Diploma in Web UX Design and Production. </p>
     
-    <p>With my experiences, I have the knowledge of the whole game; learning what the <b>client needs</b>, designing and delivering the project with the best possible outcome.</p>
+    <p>With my experiences, I have the knowledge of the whole game; learning what the <b class="i2">client needs</b>, designing and delivering the project with the best possible outcome.</p>
     
-    <p>I think about the most <b>effective systems</b> for the solution, 
+    <p>I think about the most <b class="i3">effective systems</b> for the solution, 
     with three years of experience teaching myself web technologies and freelance, while bringing my skills in art into my design. 
-    Now with <b>UX experience</b> from Yoobee School of Design.</p>
+    Now with <b class="i4">UX experience</b> from Yoobee School of Design.</p>
     <div class="button-holder">
         <a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>
           <button class="btn">My Works</button>

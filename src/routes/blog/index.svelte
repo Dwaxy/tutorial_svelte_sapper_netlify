@@ -21,11 +21,17 @@
     grid-gap: 1rem;
     grid-auto-flow: dense;
     min-height: calc(100vh - 150px);
+    justify-content: center;
     .item {
       width: $itemWidth;
       padding: 15px;
       padding-bottom: 40px;
       margin: 0 auto;
+      @media screen and (max-width: 400px) {
+        padding: 0px;
+        padding-bottom: 15px;
+        width: 290px;
+      }
       .content-holder {
         margin-top: -80px;
       }
