@@ -109,6 +109,8 @@
 
     .right-content {
       padding-left: 30px;
+      opacity: 0;
+      animation: fadein 2s;
       @media screen and (max-width: 1000px) {
         padding: 0;
       }

@@ -85,3 +85,8 @@ button::-moz-focus-inner {
 .btn:hover{
     cursor: pointer;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }

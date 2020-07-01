@@ -83,7 +83,7 @@ At the start of development, Akash was tasked with setting up some basic express
 - Target audience 
 
 
-## Uncomepleate
+## Incomplete
 Due to the roadblocks we encountered as a team, as well as personally, some use cases we could not get to or complete in time. They were:
 
 Above all the edit item and edit user functionality (the only use case I missed, but a major one)

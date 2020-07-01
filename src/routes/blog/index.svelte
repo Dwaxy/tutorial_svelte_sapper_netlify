@@ -15,6 +15,10 @@
 
 <style lang="scss">
   $itemWidth: 350px;
+
+  .title {
+    padding-left: 40px;
+  }
   .items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($itemWidth, 1fr));
@@ -65,6 +69,7 @@
   <title>Portfolio Items</title>
 </svelte:head>
 
+<h1 class="title">My Works</h1>
 <div class="items">
   {#each posts as post}
     <!-- we're using the non-standard `rel=prefetch` attribute to

@@ -9,7 +9,6 @@
     "Express",
     "Graphql",
     "Sass",
-    "Diploma in Web & UX Design",
   ];
 
 export let segment;
@@ -87,10 +86,16 @@ export let segment;
 
   <div class="right">
     <ul class="tags">
-    <h2 class="title">My Skills</h2>
+      <h2 class="title">My Skills</h2>
       {#each techList as tech}
         <li>{tech}</li>
       {/each}
     </ul>
+
+    <ul class="tags">
+      <h2 class="title">Qalifications</h2>
+      <li>Diploma in Web UX Design and Production</li>
+    </ul>
+    
   </div>
 </div>
