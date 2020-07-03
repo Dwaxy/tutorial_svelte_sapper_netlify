@@ -103,8 +103,11 @@
       width: 70%;
       height: 70vh;
       min-width: 400px;
-      max-width: 900px;
+      max-width: 700px;
       max-height: 70vw;
+      * > img {
+        max-height: 400px;
+      }
     }
 
     .right-content {
@@ -119,7 +122,7 @@
       }
       h1 {
         margin-top: 0px;
-        line-height: 1.4;
+        line-height: 0.9;
       }
       .tags {
         list-style-type: none;

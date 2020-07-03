@@ -16,9 +16,9 @@
 <style lang="scss">
   $itemWidth: 350px;
 
-  .title {
-    padding-left: 40px;
-  }
+  // .title {
+  //   padding-left: 40px;
+  // }
   .items {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax($itemWidth, 1fr));
