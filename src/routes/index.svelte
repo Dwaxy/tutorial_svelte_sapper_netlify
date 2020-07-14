@@ -27,8 +27,11 @@ export let segment;
     .title {
       font-family: 'Heebo', sans-serif;
     }
-    p, b {
+    p {
       letter-spacing: 0.8px;
+    }
+    b {
+      letter-spacing: 1.7px;
     }
 
     .i1 {
