@@ -93,7 +93,7 @@ export let segment;
     </ul>
 
     <ul class="tags">
-      <h2 class="title">Qalifications</h2>
+      <h2 class="title">Qualifications</h2>
       <li>Diploma in Web UX Design and Production</li>
     </ul>
     
