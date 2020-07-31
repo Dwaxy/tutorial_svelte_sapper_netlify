@@ -99,6 +99,12 @@ export let segment;
       <h2 class="title">Qualifications</h2>
       <li>Diploma in Web UX Design and Production</li>
     </ul>
+
+    <ul class="tags">
+      <h2 class="title">Contact</h2>
+      <li>Joel.Innes@gmail.com</li>
+      <li>0204 0987778</li>
+    </ul>
     
   </div>
 </div>
