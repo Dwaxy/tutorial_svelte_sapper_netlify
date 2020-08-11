@@ -23,7 +23,6 @@ export let segment;
   margin: 0 auto;
   .right, .left {
     width: 400px;
-    padding-top: 5vh;
     .title {
       font-family: 'Heebo', sans-serif;
     }
