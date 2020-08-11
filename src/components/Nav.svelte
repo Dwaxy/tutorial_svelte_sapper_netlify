@@ -60,7 +60,7 @@
 
 
     <div class="links-holder">
-    <a href="https://github.com/Dwaxy" target="_blank">
+    <a href="https://github.com/joelcarter-dev" target="_blank">
       <div class="git">
         <svg
           version="1.1"
