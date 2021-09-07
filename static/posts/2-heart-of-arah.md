@@ -1,6 +1,6 @@
 ---
-slug: 2-elloron-arts
-title: Elloron Arts
+slug: 2-heart-of-arah
+title: Heart Of Arah
 tags:
     - react
     - gatsby
