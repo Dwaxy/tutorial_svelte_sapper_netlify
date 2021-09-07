@@ -7,11 +7,11 @@ tags:
     - sass
 
 image: "/images/art-site-main.png"
-link: "https://elloron-art.netlify.app/"
+link: "https://heartofarah.art/"
 gitLink: "https://github.com/Dwaxy/art-site"
 ---
 
-# Elloron Arts
+# Heart Of Arah
 
 ## My Art portfolio and store using Gatsby, React, Graphql Netlify CMS, forms, and hosting
 
