@@ -9,6 +9,8 @@
     "Express",
     "Graphql",
     "Sass",
+    "HTML",
+    "Javascript"
   ];
 
 export let segment;
@@ -72,13 +74,13 @@ export let segment;
 <div class="top">
   <div class="left">
     <h2 class="title">About Me</h2>
-    <p>I'm Joel, a <b class="i1">Full-Stack</b> web developer based in <b class="i2">christchurch</b> new zealand, who has just finished a Diploma in Web UX Design and Production. </p>
+    <p>I'm Joel, a <b class="i1">self-taught, Full-Stack</b> web developer based in <b class="i2">Ashburton, Canterbury</b> new zealand. </p>
     
     <p>With my experiences, I have the knowledge of the whole game; learning what the <b class="i2">client needs</b>, designing and delivering the project with the best possible outcome.</p>
     
-    <p>I think about the most <b class="i3">effective systems</b> for the solution, 
-    with three years of experience teaching myself web technologies and <b>freelance</b>, while bringing my skills in art into my design. 
-    Now with <b class="i4">UX experience</b> from Yoobee School of Design.</p>
+    <p>I think about the most <b class="i3">effective systems</b> for the solution, with three years of experience teaching myself web technologies and <b>freelancing</b>, while bringing my skills in art into my design.</p>
+    
+    <p>Now with <b class="i4">UX experience</b> from Yoobee School of Design.</p>
     <div class="button-holder">
         <a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>
           <button class="btn">My Works</button>
@@ -97,6 +99,11 @@ export let segment;
     <ul class="tags">
       <h2 class="title">Qualifications</h2>
       <li>Diploma in Web UX Design and Production</li>
+      <h2 class="title">Covering</h2>
+      <li>Front End</li>
+      <li>Back End</li>
+      <li>User Experience</li>
+      <li>User Research</li>
     </ul>
 
     <ul class="tags">
